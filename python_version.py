@@ -2,7 +2,7 @@ import json
 import sys
 import os
 
-VERSION_FILE = "version.json"
+VERSION_FILE = "docker_version.json"
 
 def get_version():
     if not os.path.exists(VERSION_FILE):
@@ -27,31 +27,31 @@ def format_version(version):
             return f"{major}.{minor}"  # e.g., 5.3.0 -> "5.3"
     else:
         return f"{major}.{minor}.{patch}"  # e.g., 6.0.1 -> "6.0.1"
+def show_version():
+    v = get_version()
+    return format_version(v)
+
+def update_version(v):
+    save_version(v)
+    return format_version(v)
 
 def increment_major():
     v = get_version()
     v['major'] += 1
     v['minor'] = 0
     v['patch'] = 0
-    save_version(v)
-    return format_version(v)
+    return update_version(v)
 
 def increment_minor():
     v = get_version()
     v['minor'] += 1
     v['patch'] = 0
-    save_version(v)
-    return format_version(v)
+    return update_version(v)
 
 def increment_patch():
     v = get_version()
     v['patch'] += 1
-    save_version(v)
-    return format_version(v)
-
-def show_version():
-    v = get_version()
-    return format_version(v)
+    return update_version(v)
 
 
 if __name__ == '__main__':
@@ -60,7 +60,7 @@ if __name__ == '__main__':
         sys.exit(0)
 
     if len(sys.argv) != 2:
-        print("Usage: python_versioning <major|minor|patch|show>")
+        print("Usage: python_version <major|minor|patch|show>")
         sys.exit(1)
 
     command = sys.argv[1]
