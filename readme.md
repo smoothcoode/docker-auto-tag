@@ -7,6 +7,12 @@ This project provides a streamlined approach to automate Docker image tagging us
 
 ![Docker Tag Illustration](https://github.com/smoothcoode/Image/blob/main/dockertag.gif?raw=true)
 ---
+## Features
+
+- Semantic versioning stored in a JSON file and Automated version increments (major, minor, patch)
+- Timestamp-based versioning for unique build identifiers
+- Cross-platform setup instructions for Windows and Linux
+---
 
 ## Docker Image Reference Structure
 
@@ -30,15 +36,6 @@ Identifies a specific version or variant of the image.
   - `myapp:1.0.0` (semantic version)
   - `myapp:2025_10_14_1200` (timestamp-based tag)
   - `myapp:latest` (default if none specified)
-
-Using tags effectively supports version control, CI/CD automation, and reproducible deployments.
----
-
-## Features
-
-- Semantic versioning stored in a JSON file and Automated version increments (major, minor, patch)
-- Timestamp-based versioning for unique build identifiers
-- Cross-platform setup instructions for Windows and Linux
 
 ---
 
