@@ -137,7 +137,6 @@ dtsv
 
 ###  Linux
 
-Add the alias to your shell configuration (`~/.bashrc` or `~/.zshrc`):
 
 ```bash
 echo $SHELL  #To know your shell 
@@ -145,6 +144,11 @@ echo $SHELL  #To know your shell
 Set Date-Timestamps alias 
 ```bash
 alias dtsv="date +'%Y_%m_%d__%H_%M_%S'"
+```
+Add Date-Timestamps alias to Shell configuration
+ 
+```bash
+~/.bashrc   # or ~/.zshrc
 ```
 
 After editing, source the profile:
