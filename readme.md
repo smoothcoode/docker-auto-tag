@@ -15,27 +15,12 @@ This project provides a streamlined approach to automate Docker image tagging us
 
 Specifies the hostname (and optional port) of the Docker registry.
 
-- Examples:
-  - `registry.hub.docker.com`
-  - `myregistry.local:5000`
 
 ### 🔹 NAMESPACE (Optional)
 
 Represents the user or organization account within the registry.
-
-- Examples:
-  - `library`
-  - `myusername`
-
 ### 🔹 REPOSITORY (Required)
-
 The actual name of the image.
-
-- Examples:
-  - `nginx`
-  - `python`
-  - `myapp-backend`
-
 ### 🔹 TAG (Optional but Important)
 
 Identifies a specific version or variant of the image.
