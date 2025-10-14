@@ -1,2 +1,3 @@
 .idea/
-version.json
+docker_version.json
+.gitignore
