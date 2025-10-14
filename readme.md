@@ -5,7 +5,7 @@ This project provides a streamlined approach to automate Docker image tagging us
 - **Semantic Versioning**
 - **Timestamp-based Versioning**
 
-<img src="https://github.com/smoothcoode/Image/blob/main/dockertag.gif?raw=true" width="600" />
+<img src="https://github.com/smoothcoode/Image/blob/main/dockertag.gif?raw=true"  />
 ---
 ## Features
 
