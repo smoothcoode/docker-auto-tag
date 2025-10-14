@@ -13,6 +13,14 @@ This project provides a streamlined approach to automate Docker image tagging us
 - Timestamp-based versioning for unique build identifiers
 - Cross-platform setup instructions for Windows and Linux
 ---
+## Usage in Docker 
+After configuring  Semantic/DateTimeStamp versioning you can use it in docker like the following 
+```bash
+ docker build -t "docker-auto-tag:$(pyv)" .  #build docker image with semantic versioning 
+ docker push  "username/docker-auto-tag:$(pyv)" #push docker image created with semantic versioning 
+ docker build -t "docker-auto-tag:$(dtsv)" . #build docker image with TimeStamp based versioning 
+```
+
 
 ## Docker Image Reference Structure
 
