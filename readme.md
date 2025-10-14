@@ -148,7 +148,7 @@ alias dtsv="date +'%Y_%m_%d__%H_%M_%S'"
 Add Date-Timestamps alias to Shell configuration
  
 ```bash
-~/.bashrc   # or ~/.zshrc
+nano ~/.bashrc   # or nano  ~/.zshrc
 ```
 
 After editing, source the profile:
